@@ -1,0 +1,41 @@
+.signup-background {
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .signup-container {
+    background-color: rgb(227, 225, 225);
+    padding: 20px;
+    border-radius: 10px;
+    width: 30%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Responsive design: Adjust for smaller screens */
+@media (max-width: 768px) {
+    .signup-container {
+      width: 80%; /* Make container take more space on smaller devices */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .signup-container {
+      width: 30%; /* For extra-small screens, make it almost full width */
+      padding: 15px; /* Slightly reduce padding for compactness */
+    }
+  }
+  
+  /* Adjust text size on mobile */
+  @media (max-width: 768px) {
+    h2 {
+      font-size: 1.5rem; /* Adjust the heading size for smaller screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    h2 {
+      font-size: 1.2rem; /* Further reduce the size for extra-small screens */
+    }
+  }

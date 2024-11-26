@@ -1,0 +1,41 @@
+.Carousel-img{
+    width: 100%;
+    height:auto;
+    padding-top: 80px;
+    padding-bottom: 22px;
+}
+.carousel img.rounded-image {
+  border-radius: 15px; /* Round corners */
+  background-color: black; /* Transparent background */
+  padding: 10px; /* Optional: Adds padding inside the border */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Adds shadow for depth */
+}
+
+/* Style for next and prev buttons */
+.carousel-control-prev, .carousel-control-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  background-color: transparent;
+  border: 2px solid rgb(150, 142, 142);
+  padding: 5px;
+  width:auto;
+  font-size: 30px;
+  color: rgb(255, 255, 255);
+  z-index: 1;
+}
+
+/* Position prev button */
+.carousel-control-prev {
+  left: 0px;
+  background-color:rgb(150, 142, 142);
+}
+
+/* Position next button */
+.carousel-control-next {
+  right: 0px;
+  background-color:rgb(150, 142, 142);
+}
+
+

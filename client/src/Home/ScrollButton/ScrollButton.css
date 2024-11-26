@@ -1,0 +1,27 @@
+.btns {
+    position: fixed; /* Position fixe */
+    bottom: 2%; /* En bas de l'écran */
+    right: 2%; /* À droite de l'écran */
+    z-index: 99; /* S'assurer que le bouton reste au-dessus des autres éléments */
+    border: none; /* Pas de bordure */
+    outline: none; /* Pas de contour */
+    background-color: rgba(255, 255, 255, 0.4); /* Fond transparent */
+    box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.2); /* Ombre pour effet de profondeur */
+    color: black; /* Couleur du texte (flèche) */
+    cursor: pointer; /* Pointeur sur hover */
+    padding: 0px 15px; /* Espacement autour de la flèche */
+    border-radius: 10px; /* Coins arrondis */
+    font-size: 30px; /* Taille de la flèche */
+    transition: background-color 0.3s, box-shadow 0.3s; /* Transition au survol */
+    
+  }
+  
+  .btns:hover {
+    background-color: rgba(180, 180, 180, 0.6); /* Changer la couleur au survol */
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.3); /* Ombre plus marquée au survol */
+  }
+  
+  .btns:focus {
+    outline: none; /* Pas de contour au focus */
+  }
+  

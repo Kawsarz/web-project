@@ -1,0 +1,15 @@
+
+.btn-secondary{
+    margin-left: 40px;
+    margin-right: 40px;
+    background-color: rgb(240, 240, 240);
+    font-size:18px;
+    color: black;
+    
+}
+
+.btn-secondary:hover{
+    background-color: white;
+    color: black;
+}
+

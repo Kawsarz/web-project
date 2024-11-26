@@ -1,0 +1,37 @@
+
+  .buttonshadow:hover{
+    box-shadow: 0px 0px 10px rgba(0, 0,0);
+    background-color:rgb(231, 236, 228);
+    color: black;
+
+  }
+
+  .cc {
+    background-color: transparent;
+  }
+
+  .custom{
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  }
+  /* Custom Modal Styles */
+.modal-dialog {
+  max-width: 800px;
+}
+
+.modal-header {
+  background-color: #f8f9fa;
+}
+
+.modal-body {
+  background-color: #fff;
+}
+
+.buttonshadow:hover {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  background-color: rgb(200, 206, 197);
+  color: black;
+}
+

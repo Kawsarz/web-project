@@ -1,0 +1,17 @@
+
+
+.plan-text{
+    font-style:oblique;
+    text-align: center;
+    font-size: 20px;
+    margin-left: -3%;
+    margin-right: 0px;
+    margin-bottom: 30px;
+    background-color: aqua;
+    /* box-shadow: 0px 0px 10px rgb(237, 235, 235); */
+
+}
+.plan-text .card-body{
+    background-color: rgb(241, 241, 241);
+}
+
