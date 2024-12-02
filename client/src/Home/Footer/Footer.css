@@ -5,10 +5,12 @@
   }
   
   .footer-brand {
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     font-weight: 700;
     color: #fff;
   }
+
+
   
   .footer-col {
     margin-bottom: 20px;
@@ -42,4 +44,10 @@
   .footer-brand{
     font-size: 25px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+
+  @media (min-width: 760px) and (max-width: 990px) {
+    .footer-brand {
+      font-size: 1.1rem;
+    }
   }

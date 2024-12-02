@@ -5,7 +5,6 @@ import { useNavigate } from "react-router-dom";
 import { Element } from "react-scroll";
 import MainCarousel from "../Home/MainCarousel/MainCarousel";
 import Footer from "../Home/Footer/Footer"
-
 import './Signup.css'
 import NavLogin from "./NavLogin";
 
@@ -27,8 +26,8 @@ function Signup() {    //champ bl formulaire l htinon, set.. hydol fct qui perme
     
         axios.post("http://localhost:3000/api/register", { name, email, password }) //hon on va envoyer une requette post avec name, pass, email l fwtn l user 
             .then(result => {
-                console.log(result);
-                localStorage.setItem('user', JSON.stringify({ name: result.data.name, email}));
+                console.log(result); //afficher result 
+                localStorage.setItem('user', JSON.stringify({ name: result.data.name, email})); //ha yhoton bl databse esma user sous forme de json 
                 navigate("/login"); //eza success srt l post ha y5dne aal login page
             })
             .catch(err => {

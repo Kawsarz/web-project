@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Button, Card, Modal } from "react-bootstrap";
 import { FaPlus } from "react-icons/fa";
-import FormComponent from "../../ActivityForm/FormComponent";
+import FormComponent from "./FormComponent";
 import "./CreateNew.css";
 
 function CreateNew({ setRefreshTrigger }) {//setRefreshTrigger hyde fct la bass n3ml creat new plan d8re btzdle yeha bl carousel bala ma ana e3ml refresh

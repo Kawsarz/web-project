@@ -4,7 +4,6 @@ import { useState,useEffect } from 'react';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Home from './Home/Home';
-import { Card } from "react-bootstrap";
 import Signup from './Signup/Signup.js';
 import Login from './Signup/Login';
 import Loading from './Loading/Loading';
@@ -20,7 +19,7 @@ function App() {
     // Simulate an API call or other loading tasks
     const timer = setTimeout(() => {
       setLoading(false); // After some time, the page will stop showing the loading screen
-    }, 2000); // Simulate 2 seconds of loading time (you can adjust this)
+    }, 600); // Simulate 2 seconds of loading time (you can adjust this)
 
     // Clear the timeout if the component is unmounted
     return () => clearTimeout(timer);

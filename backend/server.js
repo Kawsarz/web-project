@@ -1,13 +1,18 @@
 // server.js
-const express = require("express");
-const mongoose = require("mongoose");
-const bodyParser = require('body-parser');
+const express = require("express"); //we will use express.js for the backedn
+const mongoose = require("mongoose"); //we will use mongoDB for the data base
+
+const app = express(); //initialiser une application express pour l'utiliser 
+const port = 3000; //we define the port we want the serveur to listen to the request 
+
+
+//Importe  HTTP request
+const bodyParser = require('body-parser'); //pour analyser les file .json 
 const activitiesRoutes = require('./routes/activities');
 const locationsRoutes=require ('./routes/locations');
 const UserauthRoutes = require('./routes/Userauth');
-const path = require('path');
-const app = express();
-const port = 3000;
+const path = require('path'); //dans node.js pour manipuler les chemin folder/file
+
 
 // Middleware
 app.use(bodyParser.json());

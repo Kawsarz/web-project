@@ -289,15 +289,15 @@ const MyCarousel2 = () => {
               <Card.Text>
                 <Badge bg="green">Location</Badge> {location.location}
               </Card.Text>
-              <Button className="partbtn">Details</Button>
+              {/* <Button className="partbtn">Details</Button> */}
             </Card.Body>
           </Card>
         ))}
-        <div className="cardSeeMore">
+        {/* <div className="cardSeeMore">
           <button type="button" className="btn viewmoreBTN">
             View More
           </button>
-        </div>
+        </div> */}
       </div>
       </Element>
     </div>

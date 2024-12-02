@@ -96,13 +96,13 @@ router.post('/activities/:id/participate', async (req, res) => {
   const activityId = req.params.id;
 
   try {
-    // Fetch the activity by ID
+
     const activity = await Activity.findById(activityId);
     if (!activity) {
       return res.status(404).json({ error: 'Activity not found' });
     }
 
-    // Add participation logic here (e.g., increase participant count)
+
     activity.participants += 1;
     await activity.save();
 

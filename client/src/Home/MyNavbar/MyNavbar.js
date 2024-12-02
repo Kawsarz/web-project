@@ -1,4 +1,4 @@
-import {React,useState, useEffect} from 'react';
+import {React} from 'react';
 import { Navbar, Nav ,NavDropdown,Container, Image} from 'react-bootstrap';
 import { Link as ScrollLink } from "react-scroll";
 import './MyNavbar.css';
@@ -6,23 +6,6 @@ import MyAlert from './Alert';
 
 
 const MyNavbar = () => {
-    const [user, setUser] = useState(null);
-
-    // Mock login function for demonstration
-    useEffect(() => {
-        // For now, we simulate a user being logged in by fetching a user from localStorage or state
-        const loggedInUser = JSON.parse(localStorage.getItem('user'));
-        if (loggedInUser) {
-            setUser(loggedInUser);
-        }
-    }, []);
-
-    const handleLogout = () => {
-        localStorage.removeItem('user');
-        setUser(null);
-    };
-
-
 
     return (
     
@@ -31,7 +14,7 @@ const MyNavbar = () => {
         <Container fluid style={{ marginTop: '35px' }}>
         
             <Navbar.Brand href="#" className='nav-item'>
-                <Image  src="logo.png" alt="Logo" style={{ width: '40px' }} className="rounded-pill"/>
+                <Image  src={require("../img/logo.jpg")} alt="Logo" style={{ width: '80px' }} className="rounded-pill"/>
             </Navbar.Brand >
             <Navbar.Brand className="nav-item">
                 Yalla-Sawa
@@ -54,9 +37,9 @@ const MyNavbar = () => {
                     
                 </Nav>
                 <Nav className="me-5">
-                    <NavDropdown title={ user?.name || 'Profile'} id="myprofile" > 
-                        <NavDropdown.Item href="#EditProfile"classname="navbar-dropdown">Edit Profile</NavDropdown.Item>
-                        <NavDropdown.Divider/>
+                    <NavDropdown title= 'Profile' id="myprofile" > 
+                        {/* <NavDropdown.Item href="#EditProfile"classname="navbar-dropdown">Edit Profile</NavDropdown.Item>
+                        <NavDropdown.Divider/> */}
                         <NavDropdown.Item href="#Logout"  classname="navbar-dropdown">
                             <Nav.Link href="/login" >
                                 Log out

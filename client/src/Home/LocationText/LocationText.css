@@ -15,3 +15,21 @@
 .location-text .card-body{
     background-color: rgb(241, 241, 241);
 }
+
+ /* Responsive design: Adjust for smaller screens */
+ @media (max-width: 768px) {
+    .location-text {
+      width: 100%;
+      font-size: 15px;
+      /* Make container take more space on smaller devices */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .location-text {
+      width: 100%; /* For extra-small screens, make it almost full width */
+      padding: 40px;
+      font-size: 15px;
+      background-color: white; /* Slightly reduce padding for compactness */
+    }
+  }

@@ -1,10 +1,4 @@
-import React, { useState, useEffect } from "react";
-import { Button, Card, Badge, Form ,Toast} from "react-bootstrap";
-import { FaHeart } from "react-icons/fa";
-import { Element } from "react-scroll";
 
-import axios from "axios";
-import "./MyCarousel1.css";
 
 // const MyCarousel1 = ({ refreshTrigger }) => {
 //   const [activities, setActivities] = useState([]);
@@ -91,6 +85,14 @@ import "./MyCarousel1.css";
 // import axios from 'axios';
 // import './MyCarousel1.css';
 
+import React, { useState, useEffect } from "react";
+import { Button, Card, Badge, Form ,Toast} from "react-bootstrap";
+import { FaHeart } from "react-icons/fa";
+import { Element } from "react-scroll";
+
+import axios from "axios";
+import "./MyCarousel1.css";
+
 const MyCarousel1 = ({ refreshTrigger }) => {//refreshTrigger la y3ml refresh bass yn3ml modifier aw ajout shi lhalo bala ma ana e3ml refresh ta ybyno
   const [activities, setActivities] = useState([]);//la nhot b albo liste des activities t3olna l bl api
   const [favoritedCards, setFavoritedCards] = useState([]);//hyde la favorite bass baad ma wslta bl backend
@@ -129,13 +131,6 @@ const MyCarousel1 = ({ refreshTrigger }) => {//refreshTrigger la y3ml refresh ba
             : activity
         )
       );
-
-      // Send the updated participants count to the backend
-      const response = await axios.post(
-        `http://localhost:3000/api/activities/${id}/participate`,
-        { participants: updatedParticipants }
-      );
-
       // Show success message in the toast
       setToastMessage('You have successfully participated!');
       setShowToast(true);
@@ -248,16 +243,16 @@ const MyCarousel1 = ({ refreshTrigger }) => {//refreshTrigger la y3ml refresh ba
             
           </Card>
         ))}
-        <div className="cardSeeMore">
+        {/* <div className="cardSeeMore">
           <button type="button" className="btn viewmoreBTN">
             View More
           </button>
-        </div>
+        </div> */}
       </div>
       <Toast
         show={showToast}
         onClose={() => setShowToast(false)}
-        delay={3000}
+        delay={2000}
         autohide
       >
         <Toast.Body>{toastMessage}</Toast.Body>

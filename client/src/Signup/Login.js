@@ -22,7 +22,7 @@ function Login() {    //champ bl formulaire l htinon, set.. hydol fct qui permet
                 if (result.data.success) {
                     localStorage.setItem('user', JSON.stringify({ name: result.data.name, email }));
 
-                    navigate("/home"); //eza success srt l home ha y5dne aal login page
+                    navigate("/home"); //eza success srt l home ha y5dne aal home page
                 } else {
                     alert(result.data.message); // eza ma njht l post sar fi error bt3tena alert
                 }

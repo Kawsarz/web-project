@@ -16,7 +16,7 @@ import Footer from "./Footer/Footer";
 
 function Home() {
   const [refreshTrigger, setRefreshTrigger] = useState(false);
-  const [refreshTrigger2, setRefreshTrigger2] = useState(false);
+  // const [refreshTrigger2, setRefreshTrigger2] = useState(false);
   return (
     <div className="Home">
       <MyNavbar />
@@ -26,7 +26,7 @@ function Home() {
       <CreateNew setRefreshTrigger={setRefreshTrigger} />
       <LocationText />
       <MyCarousel2 />
-      <CreateLocation setRefreshTrigger2={setRefreshTrigger2} />
+      <CreateLocation setRefreshTrigger2={setRefreshTrigger} />
       <ScrollButton />
       <Footer/>
     </div>

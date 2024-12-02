@@ -13,7 +13,7 @@ const NavLogin = () => {
         <Container fluid style={{ marginTop: '35px' }}>
         
             <Navbar.Brand href="#" className='nav-item'>
-                <Image  src="logo.png" alt="Logo" style={{ width: '40px' }} className="rounded-pill"/>
+                <Image  src={require("../Home/img/logo.jpg")} alt="Logo" style={{ width: '80px' }} className="rounded-pill"/>
             </Navbar.Brand >
             <Navbar.Brand className="nav-item">
                 Yalla-Sawa

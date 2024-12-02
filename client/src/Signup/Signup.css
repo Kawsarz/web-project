@@ -17,6 +17,10 @@
 @media (max-width: 768px) {
     .signup-container {
       width: 80%; /* Make container take more space on smaller devices */
+      padding: 15px;
+    }
+    h2 {
+      font-size: 1.5rem; /* Adjust the heading size for smaller screens */
     }
   }
   
@@ -25,17 +29,24 @@
       width: 30%; /* For extra-small screens, make it almost full width */
       padding: 15px; /* Slightly reduce padding for compactness */
     }
-  }
-  
-  /* Adjust text size on mobile */
-  @media (max-width: 768px) {
-    h2 {
-      font-size: 1.5rem; /* Adjust the heading size for smaller screens */
-    }
-  }
-  
-  @media (max-width: 480px) {
+
     h2 {
       font-size: 1.2rem; /* Further reduce the size for extra-small screens */
     }
+  }
+  
+  @media (min-width: 769px ) and (max-width:987px) {
+    .signup-container {
+      width: 50%; /* For extra-small screens, make it almost full width */
+      padding: 15px; /* Slightly reduce padding for compactness */
+    }
+
+  }
+
+  @media (min-width: 250px ) and (max-width:480px) {
+    .signup-container {
+      width: 70%; /* For extra-small screens, make it almost full width */
+      padding: 15px; /* Slightly reduce padding for compactness */
+    }
+
   }

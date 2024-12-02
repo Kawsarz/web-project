@@ -3,6 +3,7 @@
     box-shadow: 0px 0px 10px rgba(0, 0,0);
     background-color:rgb(231, 236, 228);
     color: black;
+    
 
   }
 
@@ -26,7 +27,7 @@
 }
 
 .modal-body {
-  background-color: #fff;
+  background-color: #ffffff;
 }
 
 .buttonshadow:hover {
@@ -35,3 +36,25 @@
   color: black;
 }
 
+ /* Responsive design: Adjust for smaller screens */
+ /* @media (max-width: 768px) {
+  .custom{
+    font-size: 15px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  }
+  .my-5{
+    margin-bottom: 0px;
+    margin-left: 0px;
+  }
+}
+
+@media (max-width: 480px) {
+  .custom{
+    height: ;
+    width: 50%;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 15px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  }
+} */

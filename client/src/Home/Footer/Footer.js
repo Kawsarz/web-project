@@ -3,7 +3,7 @@ import { Container, Row, Col, Stack, Image, Nav, NavLink } from "react-bootstrap
 import { FaLinkedin } from "react-icons/fa";
 import { Element } from "react-scroll";
 import './Footer.css'; // Add the custom styles here
-import '../../logo.svg';
+import '../img/logo.jpg';
 
 function Footer() {
   return (
@@ -11,13 +11,13 @@ function Footer() {
     <footer className="footer py-4">
       <Container>
         <Row className="text-white">
-          <Col xs={12} sm={6} md={4} className="footer-col">
+          <Col xs={12} sm={6} md={2} className="footer-col">
             <Stack className="text-center">
               <Image
-                src="logo.svg"
+                src={require("../img/logo.jpg")}
                 alt="Company logo"
                 rounded
-                width={150}
+                width={200}
                 height={150}
                 className="mb-3"
               />
